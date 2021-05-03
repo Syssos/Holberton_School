@@ -1,0 +1,1 @@
+This file is dedicated to help us prepare for the AIR bnb project

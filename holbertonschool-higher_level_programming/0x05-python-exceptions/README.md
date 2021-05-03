@@ -1,0 +1,1 @@
+This directory was created to practice and deminstrate Execeptions in python.

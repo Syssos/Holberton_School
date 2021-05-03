@@ -1,0 +1,1 @@
+This is a folder dedicated to learning and displaying how basic classes or OOP works in python.

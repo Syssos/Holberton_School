@@ -1,0 +1,1 @@
+This is a folder dedicated to learning classes in Python
