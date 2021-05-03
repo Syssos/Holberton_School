@@ -1,0 +1,1 @@
+0.) Prints the linked list.
