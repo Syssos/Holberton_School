@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains
+
+if [ "$#" -lt 2 ]
+then
+    list=('www' 'lb-01' 'web-01' 'web-02')
+    for i in "${list[@]}"
+    do
+	echo -n "The subdomain $i is a "
+	dig $i.$1 | grep -A1 'ANSWER SECTION:'| tail -1| awk '{printf $4}'
+	echo -n " record and points to "
+	dig $i.$1 | grep -A1 'ANSWER SECTION:'|tail -1| awk '{print $5}'
+    done
+else
+    echo -n "The subdomain $2 is a "
+    dig $2.$1 | grep -A1 'ANSWER SECTION:'| tail -1  | awk '{printf $4}'
+    echo -n " record and points to "
+    dig $2.$1 | grep -A1 'ANSWER SECTION:'|tail -1| awk '{print $5}'
+fi

@@ -1,0 +1,1 @@
+This is a serious of scripts to help practice in teh shell when it comes to permisions

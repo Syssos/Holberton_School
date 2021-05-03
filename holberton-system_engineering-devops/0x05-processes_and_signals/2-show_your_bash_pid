@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A script that shows only bash processes
+ps auxf | grep bash

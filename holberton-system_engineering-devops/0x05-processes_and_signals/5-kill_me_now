@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This is a script that kills a  currently running processes
+kill -SIGTERM "$(pgrep -f 4-to_infinity_and_beyond)"

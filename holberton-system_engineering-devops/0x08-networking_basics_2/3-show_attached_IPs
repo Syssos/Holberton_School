@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This is a script that shows attached IP's
+ifconfig | grep 'inet addr:' | awk \{'print $2'\} | cut -d ":" -f2

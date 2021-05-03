@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# back's up database.
+new=$(date '+%d-%m-%Y').tar.gz
+mysqldump -u root -p"$1" --all-databases > backup.sql
+tar -czf "$new" backup.sql

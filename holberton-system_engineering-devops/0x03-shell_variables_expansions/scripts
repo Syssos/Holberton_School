@@ -1,0 +1,23 @@
+.TH man 1 "1/15/2017" "V 1.0" "Scripts help"
+.SH NAME
+.B Cody's Scripts
+- made for ease of use on the termianl.
+.SH SYNOPSIS
+aliases were created for the scripts starting with ".". This is to keep them hidden while I am working on files
+.SH DESCRIPTION
+To use any of the commands just put the letter there are no real options yet.
+.SH OPTIONS
+.IP p
+- This will push everything to github. To use put p "the commit you want" and press enter, and then sign into github account
+.IP r
+- This will remove all files that have "~" in the name. This is recommended to be used before "p"
+.IP n
+- This will create a new file that is executable. To use put n "Filename"
+.IP l
+- This will use the ls command with options "-av1"
+.SH SEE ALSO
+.I NA
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Cody Paral

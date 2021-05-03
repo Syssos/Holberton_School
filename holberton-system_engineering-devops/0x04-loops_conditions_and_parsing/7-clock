@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays the first 12 hours and 59 seconds
+i=0
+while (( i < 13 ))
+do
+    echo "Hour: $i"
+    x=1
+    while (( x < 60 ))
+    do
+	echo "$x"
+	let x+=1
+    done
+    let i+=1
+done

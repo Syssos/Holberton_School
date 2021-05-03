@@ -1,0 +1,5 @@
+host 104.196.28.159
+identityFile ~/.ssh/holberton
+passwordAuthentication no
+RSAAuthentication no
+ForwardAgent yes

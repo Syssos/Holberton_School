@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installs NGINX on new machine listening on port 80
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+var1="location /redirect_me {rewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4$1 permanent;}"
+sed -i "30i $var1" /etc/nginx/sites-available/default
+service nginx restart

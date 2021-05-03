@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This program prints a string with a until loop
+i=10
+until [ $i -eq 0 ]; do
+    echo "Holberton School"
+    i=$((i-1))
+done

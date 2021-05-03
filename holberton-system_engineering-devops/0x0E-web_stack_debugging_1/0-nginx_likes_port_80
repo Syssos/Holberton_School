@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# changes port nginx is listening on to 80
+
+sed -i -e 's/8080/80/g' /etc/nginx/sites/enabled/defualt
+sudo service nginx restart
